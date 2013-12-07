@@ -1,0 +1,13 @@
+Embedded software for an AVR-based temperature monitor.
+
+ - Retains one week of data for three temperature sensors, with 1-minute and 0.0625 C resolution
+ - Minimizes page writes by caching data until written to EEPROM every twenty minutes
+ - For longevity, each EEPROM page experiences only three write cycles per week
+ - Fault-tolerant ring buffer storage - the start of the buffer is marked by a blank page
+ - Interactive serial console
+ - Real-time thermometer display of data from three sensors
+ - Graphical data review with scrolling and adjustable scope (1 hour, 6 hours, 24 hours, 1 week)
+
+Uses I2C to pull data from TMP102 temperature sensors
+Uses two-wire interface to driving EEPROM memory
+Uses a non-standard serial interface to drive a 128x64 LCD display

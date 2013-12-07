@@ -1,0 +1,12 @@
+data/common.h.i
+data/tmp102.h.i
+data/screen.h.i
+data/uart_stdio.h.i
+data/data.h.i
+data/uart.c.i
+data/uart.h.i
+data/eeprom.h.i
+data/display.h.i
+data/Makefile.i
+data/i2c.h.i
+data/monitor.c.i
